@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="icon" href="./images/icons/favicon.ico" />
+  </head>
+
+  <body data-body>
+    <!--Header-->
+    <header>
+      <div class="container">
+        <!--navigation-->
+        <nav class="navigation">
+          <a class="logo" href="index.html" lang="en"
+            >Web<span class="logo-studio-black">Studio</span></a
+          >
+          <ul class="navigation-list">
+            <li>
+              <a class="navigation-list__link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="navigation-list__link current" href="./portofolio.html"
+                >Portofolio</a
+              >
+            </li>
+            <li>
+              <a class="navigation-list__link" href="./contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!--header contacts-->
+        <ul class="header-contacts-list">
+          <li>
+            <a
+              class="header-contacts-list__link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contacts-list__icon" width="16" height="12">
+                <use href="./images/icons/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header-contacts-list__link" href="tel:+12127724150">
+              <svg class="header-contacts-list__icon" width="10" height="16">
+                <use href="./images/icons/icons.svg#icon-phone"></use>
+              </svg>
+              +1 212-772-4150
+            </a>
+          </li>
+        </ul>
+        <!--mobile-menu-btn-->
+        <button
+          type="button"
+          class="mobile-menu-button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="mobile-menu-button-icon"
+            width="40"
+            height="40"
+            aria-label="mobile-menu-interaction"
+          >
+            <use
+              class="mobile-menu__icon-burger"
+              href="./images/icons/icons.svg#burger-btn"
+            ></use>
+            <use
+              class="mobile-menu__icon-close"
+              href="./images/icons/icons.svg#close-btn"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!--gallery-->
+      <section class="section">
+        <div class="example container">
+          <h1 class="hidden-element">Our job</h1>
+          <ul class="filter">
+            <li><button class="filter__btn current">All</button></li>
+            <li><button class="filter__btn">Web-sites</button></li>
+            <li><button class="filter__btn">Apps</button></li>
+            <li><button class="filter__btn">Design</button></li>
+            <li><button class="filter__btn">Marketing</button></li>
+          </ul>
+
+          <ul class="example-list gallery">
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="./images/desktop/portofolio/1x/technoduck.jpeg 1x ./images/desktop/portofolio/1x/technoduck.webp"
+                      media="(min-width 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/technoduck.jpg    1x,
+                        ./images/desktop/portfolio/2x/technoduck@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/technoduck.webp    1x,
+                        ./images/tablet/portfolio/2x/technoduck@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/technoduck.jpg    1x,
+                        ./images/tablet/portfolio/2x/technoduck@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/technoduck.webp    1x,
+                        ./images/smartphone/portfolio/2x/technoduck@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/technoduck.jpg    1x,
+                        ./images/smartphone/portfolio/2x/technoduck@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/technoduck@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Technoduck</h3>
+                  <p class="example__text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/allstars_desktop.webp    1x,
+                        ./images/desktop/portfolio/2x/allstars_desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/allstars.jpg    1x,
+                        ./images/desktop/portfolio/2x/allstars@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/allstars.webp    1x,
+                        ./images/tablet/portfolio/2x/allstars@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/allstars.jpg    1x,
+                        ./images/tablet/portfolio/2x/allstars@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/allstars.webp    1x,
+                        ./images/smartphone/portfolio/2x/allstars@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/allstars.jpg    1x,
+                        ./images/smartphone/portfolio/2x/allstars@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="../images/smartphone/portfolio/2x/allstars@2x.jpg "
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">
+                    Poster New Orlean vs Golden Star
+                  </h3>
+                  <p class="example__text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Seafood restaurant</h3>
+                  <p class="example__text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Project Prime</h3>
+                  <p class="example__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Project Boxes</h3>
+                  <p class="example__text">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Inspiration has no Borders</h3>
+                  <p class="example__text">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Limited Edition</h3>
+                  <p class="example__text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Project Lab</h3>
+                  <p class="example__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="example-list__item">
+              <a class="example__link" href="#">
+                <div class="example__overlay-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.webp    1x,
+                        ./images/desktop/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/1x/img.jpg    1x,
+                        ./images/desktop/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.webp    1x,
+                        ./images/tablet/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/1x/img.jpg    1x,
+                        ./images/tablet/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.webp    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smartphone/portfolio/1x/img.jpg    1x,
+                        ./images/smartphone/portfolio/2x/img@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="exampe__img"
+                      src="./images/smartphone/portfolio/2x/img@2x.jpg"
+                      alt="image sample"
+                    />
+                  </picture>
+                  <p class="example__overlay-text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="example__content">
+                  <h3 class="example__name">Growing Business</h3>
+                  <p class="example__text">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="contacts-info">
+          <a class="logo" href="index.html" lang="en"
+            >Web<span class="logo-studio-white">Studio</span></a
+          >
+          <ul class="contacts-list" id="contacts">
+            <li>
+              <address>695 Park Ave, NY 10065, USA</address>
+            </li>
+            <li>
+              <a class="contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-link" href="tel:+12127724150"
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-socialmedia">
+          <p class="footer-title">FIND US ON</p>
+          <ul class="socialmedia-list">
+            <li class="socialmedia-list__item">
+              <a
+                class="socialmedia-list__link socialmedia-list__link--dark-bg"
+                href=""
+              >
+                <svg class="socialmedia-list__icon" width="20" height="20">
+                  <use href="./images/icons/socialmedia.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-list__item">
+              <a
+                class="socialmedia-list__link socialmedia-list__link--dark-bg"
+                href=""
+              >
+                <svg class="socialmedia-list__icon" width="20" height="20">
+                  <use href="./images/icons/socialmedia.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-list__item">
+              <a
+                class="socialmedia-list__link socialmedia-list__link--dark-bg"
+                href=""
+              >
+                <svg class="socialmedia-list__icon" width="20" height="20">
+                  <use href="./images/icons/socialmedia.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia-list__item">
+              <a
+                class="socialmedia-list__link socialmedia-list__link--dark-bg"
+                href=""
+              >
+                <svg class="socialmedia-list__icon" width="20" height="20">
+                  <use href="./images/icons/socialmedia.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="followUs">
+          <form action="#" class="followUs-form">
+            <p class="footer-title">Subscribe to the newsletter</p>
+            <input
+              type="email"
+              class="followUs-form__input"
+              name="user-mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="action-button">
+              Subscribe
+              <svg class="followUs-form__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#send-btn"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!--mobile-menu-->
+
+    <!--mobile-menu-content-->
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <div class="mobile-menu__frame">
+        <ul class="mobile-menu-navigation">
+          <li class="mobile-menu-navigation__item">
+            <a
+              href="./index.html"
+              class="link mobile-menu-navigation__link current"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-navigation__item">
+            <a href="./portfolio.html" class="link mobile-menu-navigation__link"
+              >Portofolio</a
+            >
+          </li>
+          <li class="mobile-menu-navigation__item">
+            <a href="" class="link mobile-menu-navigation__link">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="link mobile-menu-contacts__link mobile-menu-contacts__link--decoration"
+              href="tel:+12127724150"
+            >
+              +1 212-772-4150
+            </a>
+          </li>
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="link mobile-menu-contacts__link"
+              href="mailto:info@example.com"
+            >
+              info@example.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-socialmedia">
+          <li class="mobile-menu-socialmedia__item">
+            <a
+              class="mobile-menu-socialmedia__link"
+              href="https://www.instagram.com/"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu-socialmedia__item">
+            <a class="mobile-menu-socialmedia__link" href="https://twitter.com/"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu-socialmedia__item">
+            <a
+              class="mobile-menu-socialmedia__link"
+              href="https://www.facebook.com/"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu-socialmedia__item">
+            <a
+              class="mobile-menu-socialmedia__link"
+              href="https://www.linkedin.com/"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <!--<script src="./js/modal.js"></script>-->
+  </body>
+</html>

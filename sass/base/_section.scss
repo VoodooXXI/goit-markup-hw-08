@@ -1,0 +1,10 @@
+.section {
+  align-items: center;
+  padding-top: var(--small-padding);
+  padding-bottom: var(--small-padding);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--big-padding);
+    padding-bottom: var(--big-padding);
+  }
+}

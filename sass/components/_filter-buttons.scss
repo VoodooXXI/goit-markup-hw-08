@@ -1,0 +1,47 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 481px) {
+    justify-content: center;
+  }
+
+  & > li {
+    margin-bottom: 15px;
+  }
+
+  & > li:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    padding: 6px 22px;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    border-style: hidden;
+    border-radius: 4px;
+    color: var(--main-color);
+    background-color: var(--bg-light2-color);
+    cursor: pointer;
+    transition: color var(--main-animation),
+      background-color var(--main-animation), box-shadow var(--main-animation);
+  }
+
+  &__btn.current,
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    color: var(--main-light-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--filter-btn-shadow);
+  }
+}

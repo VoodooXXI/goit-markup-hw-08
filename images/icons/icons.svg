@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" overflow="hidden" style="position:absolute;width:0;height:0">
+<defs>
+<symbol id="burger-btn" viewBox="0 0 48 32">
+<path d="M0 5V0h48v5H0zm0 14h48v-6H0v6zm0 13h48v-5H0v5z"/></symbol>
+<symbol id="check" viewBox="0 0 34 32">
+<path fill="var(--color2, #fff)" stroke="var(--color2, #fff)" stroke-width=".4" d="M8 17v-1l-2 2 8 8 16-16-2-2-14 14-6-5z"/></symbol>
+<symbol id="close-btn" viewBox="0 0 32 32">
+<path d="M27 9l-2-2-8 8-8-8-2 2 8 8-8 8 2 2 8-8 8 8 2-2-8-8 8-8z"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 43 32">
+<path d="M39 0H4C2 0 0 2 0 4v24c0 2 2 4 4 4h35c2 0 4-2 4-4V4c0-2-2-4-4-4zm0 3L21 18 3 3h36zm0 26H4l-1-1V6l17 15a1 1 0 002 0L40 6v22l-1 1z"/></symbol>
+<symbol id="email-form" viewBox="0 0 32 32">
+<path d="M27 5H5L3 8v16l2 3h22l2-3V8l-2-3zm-1 6l-9 6a1 1 0 01-2 0l-9-6a1 1 0 111-2l9 6 9-6h1a1 1 0 010 2z"/></symbol>
+<symbol id="person-form" viewBox="0 0 32 32"><path d="M16 16a5 5 0 100-11 5 5 0 100 11zm0 3c-4 0-11 1-11 5v1l2 2h18l2-2v-1c0-4-7-5-11-5z"/></symbol>
+<symbol id="icon-phone" viewBox="0 0 20 32"><path d="M17 0H3C1 0 0 1 0 3v26c0 2 1 3 3 3h14c2 0 3-1 3-3V3c0-2-1-3-3-3zM3 2h14l1 1v21H2V3l1-1zm14 28H3l-1-1v-3h16v3l-1 1z"/><path d="M5 27a1 1 0 010 2 1 1 0 01-2 0 1 1 0 010-2 1 1 0 012 0z"/></symbol>
+<symbol id="phone-form" viewBox="0 0 32 32"><path d="M25 20l-3-1a3 3 0 00-2 1l-3 3c-4-2-6-5-8-9l2-2a3 3 0 001-2l-1-4-2-2H7C5 4 4 5 4 7c1 11 10 19 20 20 2 0 3-1 3-2v-3l-2-2z"/></symbol>
+<symbol id="send-btn" viewBox="0 0 32 32"><path d="M32 0L0 18l10 4L26 7 14 23v9l6-7 7 3 5-28z"/></symbol></defs></svg>

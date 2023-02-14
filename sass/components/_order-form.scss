@@ -1,0 +1,133 @@
+.submit {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-color);
+
+  &__title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+}
+
+.submit {
+  margin-bottom: 10px;
+  width: auto;
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__lbl {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--main-text-wan-color);
+  }
+
+  &__input {
+    min-height: 40px;
+    padding-left: 42px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    fill: currentColor;
+  }
+
+  &__input + &__icon {
+    color: var(--main-color);
+    transition: var(--main-animation);
+  }
+
+  &__input:focus + &__icon {
+    color: var(--accent-color);
+  }
+}
+
+.submit__textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--submit-textarea-color);
+  }
+}
+
+.subscription {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 30px 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: none;
+    margin-right: 7px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    outline: none;
+    transition: var(--main-animation);
+  }
+
+  &-input:checked + &__icon {
+    background-color: var(--accent-color);
+    fill: var(--main-light-color);
+    border: none;
+    transition: var(--main-animation);
+  }
+
+  &-input:focus-visible + &-icon {
+    outline: solid 1pt;
+  }
+}
+
+.submit--decoration {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--submit-decoration-color);
+  border-radius: 4px;
+  transition: border var(--main-animation);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
+
+.modal-submit-btn {
+  margin: auto;
+}

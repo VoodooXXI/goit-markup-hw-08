@@ -1,0 +1,41 @@
+:root {
+  --logo-font: "Raleway", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --accent-color: #2196f3;
+  --accent-dark-color: #188ce8;
+  --overlay-card-color: rgba(33, 150, 243, 0.9);
+  --dark-color: #000000; // logo hdr
+  --main-color: #212121; // txt, hdr, btn
+  --main-text-wan-color: #757575; // p
+  --main-light-color: #ffffff; // active txt, logo ftr, icons, p
+  --bg-light-color: #ffffff; // main bg, cards bg
+  --bg-dark-color: #2f303a; //hero, footer*
+  --bg-light2-color: #f5f4fa; // team bg, button bg
+  --header-border-color: #ececec;
+  --card-border-color: #eeeeee;
+  --icon-color: #afb1b8;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-icons-socialmedia-color: rgba(255, 255, 255, 0.1);
+  --specification-description-color: rgba(47, 48, 58, 0.8);
+  --followUs-form-input-border-color: rgba(255, 255, 255, 0.3);
+  --modal-close-btn: rgba(0, 0, 0, 0.1);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
+  --submit-textarea-color: rgba(117, 117, 117, 0.5);
+  --submit-decoration-color: rgba(33, 33, 33, 0.2);
+  --hero-gradient: linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  --filter-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --action-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --portfolio-example-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --big-padding: 94px;
+  --small-padding: 60px;
+  --list-gap: 30px;
+  --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,9 @@
+.gallery {
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--list-gap));
+  margin-left: calc(-1 * var(--list-gap));
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}

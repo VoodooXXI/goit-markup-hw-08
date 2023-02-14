@@ -1,0 +1,26 @@
+.action-button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  /* btn alignment for Chromium engine */
+  vertical-align: top;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-style: hidden;
+  border-radius: 4px;
+  color: var(--main-light-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--action-btn-shadow);
+  cursor: pointer;
+  transition: background-color var(--main-animation);
+}
+
+.action-button:hover,
+.action-button:focus {
+  background-color: var(--accent-dark-color);
+}

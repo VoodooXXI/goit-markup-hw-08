@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="icon" href="./images/icons/favicon.ico">
+</head>
+<body data-body>
+
+<!--header-->
+  <header>
+    <div class="container">
+      <!--navigation-->
+      <nav class="navigation">
+        <a class="logo" href="index.html" lang="en">Web<span class="logo-studio-black">Studio</span></a>
+        <ul class="navigation-list">
+          <li>
+            <a class="navigation-list__link current" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="navigation-list__link" href="./portofolio.html">Portofolio</a>
+          </li>
+          <li>
+            <a class="navigation-list__link" href="./contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <!--header contacts-->
+      <ul class="header-contacts-list ">
+        <li>
+          <a class="header-contacts-list__link header-contacts-list__email" href="mailto:info@devstudio.com">
+            <svg class="header-contacts-list__icon" width="16" height="12">
+              <use href="./images/icons/icons.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a class="header-contacts-list__link header-contacts-list__phone" href="tel:+12127724150">
+            <svg class="header-contacts-list__icon" width="10" height="16">
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
+            +1 212-772-4150
+          </a>
+        </li>
+      </ul>
+      <!--mobile-menu-btn-->
+      <button type="button" class="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" data-menu-button>
+        <svg class="mobile-menu-button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="mobile-menu__icon-burger" href="./images/icons/icons.svg#burger-btn"></use>
+          <use class="mobile-menu__icon-close" href="./images/icons/icons.svg#close-btn"></use>
+        </svg>
+      </button>     
+    </div>
+  </header>
+
+  <main>
+
+<!--hero-->
+    <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button class="action-button" data-modal-open type="button">Request our service</button>
+        </div>
+    </section>
+
+<!--features-->
+    <section class="features section">
+      <div class="features-container container">
+        <h2 class="section-title hidden-element">About us</h2>
+        <ul class="features-list gallery">
+            <li class="features-list__item">
+                <div class="features-list__icon">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/features.svg#antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title">ATTENTION TO DETAILS</h3>
+                <p class="features-text">We go into all the details and processes of your business to develop a customized solution.</p>
+            </li>
+            <li class="features-list__item">
+                <div class="features-list__icon">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/features.svg#clock"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title">PUNCTUALITY</h3>
+                <p class="features-text">With us, you can feel safe and secure. </br>An important principle of the company: respect your time and deadlines.</p>
+            </li>
+            <li class="features-list__item">
+                <div class="features-list__icon">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/features.svg#diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title">PLANNING</h3>
+                <p class="features-text">You will be able to observe and participate in every phase of solution development and implementation.</p>
+            </li>
+            <li class="features-list__item">
+                <div class="features-list__icon">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/features.svg#astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title">MODERN TECHNOLOGIES</h3>
+                <p class="features-text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+<!--specification-->
+    <section class="specification section">
+      <div class="specification-container container">
+        <h2 class="section-title">What we do</h2>
+         <ul class="specification-list gallery">
+          <li class="specification-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/specification/1x/workdesk1_desktop@1x.webp 1x, ./images/desktop/main/specification/2x/workdesk1_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/specification/1x/workdesk1_desktop@1x.jpg 1x, ./images/desktop/main/specification/2x/workdesk1_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/desktop/main/specification/1x/workdesk1_desktop@1x.jpg" alt="office image">
+            </picture>
+            <p class="specification__description">desktop app</p>
+          </li>
+          <li class="specification-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/specification/1x/workdesk2_desktop@1x.webp 1x, ./images/desktop/main/specification/2x/workdesk2_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/specification/1x/workdesk2_desktop@1x.jpg 1x, ./images/desktop/main/specification/2x/workdesk2_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/desktop/main/specification/1x/workdesk1_desktop@1x.jpg" alt="office image">
+            </picture>
+            <p class="specification__description">mobile app</p>
+            </li>          
+          <li class="specification-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/specification/1x/workdesk3_desktop@1x.webp 1x, ./images/desktop/main/specification/2x/workdesk3_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/specification/1x/workdesk3_desktop@1x.jpg 1x, ./images/desktop/main/specification/2x/workdesk3_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <img src="./images/desktop/main/specification/1x/workdesk1_desktop@1x.jpg" alt="office image">
+            </picture>
+            <p class="specification__description">design solutions</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!--team-->
+    <section class="team section">
+      <div class="team-container container">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="team-list gallery">
+           <li class="team-list__item">             
+            <picture>
+              <source srcset="./images/desktop/main/team/1x/cwalker_desktop@1x.webp 1x, ./images/desktop/main/team/2x/cwalker_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/team/1x/cwalker_desktop@1x.jpg 1x, ./images/desktop/main/team/2x/cwalker_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/main/team/1x/cwalker_tablet@1x.webp 1x, ./images/tablet/main/team/2x/cwalker_tablet@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp">
+              <source srcset="./images/tablet/main/team/1x/cwalker_tablet@1x.jpg 1x, ./images/tablet/main/team/2x/cwalker_tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/smartphone/main/team/1x/cwalker_smartphone@1x.webp 1x, ./images/smartphone/main/team/2x/cwalker_smartphone@2x.webp 2x" media="(min-width: 480px)"
+                type="image/webp">
+              <source srcset="./images/smartphone/main/team/1x/cwalker_smartphone@1x.jpg 1x, ./images/smartphone/main/team/2x/cwalker_smartphone@2x.jpg 2x" media="(min-width: 480px)">
+              <img src="./images/smartphone/main/team/2x/cwalker_smartphone@2x.jpg" alt="Christopher Walker">
+            </picture>
+            <div class="team-list__content">
+            <h3 class="team-list__title">Christopher Walker</h3>
+              <p class="team-list__text">Product Designer</p>
+              <ul class="socialmedia-list  team__socialmedia-list ">
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/team/1x/kevans_desktop@1x.webp 1x, ./images/desktop/main/team/2x/kevans_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/team/1x/kevans_desktop@1x.jpg 1x, ./images/desktop/main/team/2x/kevans_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/main/team/1x/kevans_tablet@1x.webp 1x, ./images/tablet/main/team/2x/kevans_tablet@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp">
+              <source srcset="./images/tablet/main/team/1x/kevans_tablet@1x.jpg 1x, ./images/tablet/main/team/2x/kevans_tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/smartphone/main/team/1x/kevans_smartphone@1x.webp 1x, ./images/smartphone/main/team/2x/kevans_smartphone@2x.webp 2x" media="(min-width: 480px)"
+                type="image/webp">
+              <source srcset="./images/smartphone/main/team/1x/kevans_smartphone@1x.jpg 1x, ./images/smartphone/main/team/2x/kevans_smartphone@2x.jpg 2x" media="(min-width: 480px)">
+              <img src="./images/smartphone/main/team/2x/kevans_smartphone@2x.jpg" alt="Kylie Evans">
+            </picture>
+            <div class="team-list__content">
+            <h3 class="team-list__title">Kylie Evans</h3>
+              <p class="team-list__text">Frontend Developer</p>
+             <ul class="socialmedia-list  team__socialmedia-list ">
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/team/1x/rharris_desktop@1x.webp 1x, ./images/desktop/main/team/2x/rharris_desktop@2x.webp 2x" media="(min-width: 1200px)"
+              type="image/webp">
+              <source srcset="./images/desktop/main/team/1x/rharris_desktop@1x.jpg 1x, ./images/desktop/main/team/2x/rharris_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/main/team/1x/rharris_tablet@1x.webp 1x, ./images/tablet/main/team/2x/rharris_tablet@2x.webp 2x" media="(min-width: 768px)"
+              type="image/webp">
+              <source srcset="./images/tablet/main/team/1x/rharris_tablet@1x.jpg 1x, ./images/tablet/main/team/2x/rharris_tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/smartphone/main/team/1x/rharris_smartphone@1x.webp 1x, ./images/smartphone/main/team/2x/rharris_smartphone@2x.webp 2x" media="(min-width: 480px)"
+              type="image/webp">
+              <source srcset="./images/smartphone/main/team/1x/rharris_smartphone@1x.jpg 1x, ./images/smartphone/main/team/2x/rharris_smartphone@2x.jpg 2x" media="(min-width: 480px)">
+              <img src="./images/smartphone/main/team/2x/cwalker_smartphone@2x.jpg" alt="Ryan Harris">
+            </picture>
+            <div class="team-list__content">
+              <h3 class="team-list__title">Ryan Harris</h3>
+              <p class="team-list__text">Marketing</p>
+              <ul class="socialmedia-list  team__socialmedia-list ">
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item">
+            <picture>
+              <source srcset="./images/desktop/main/team/1x/tmoore_desktop@1x.webp 1x, ./images/desktop/main/team/2x/tmoore_desktop@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp">
+              <source srcset="./images/desktop/main/team/1x/tmoore_desktop@1x.jpg 1x, ./images/desktop/main/team/2x/tmoore_desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/tablet/main/team/1x/tmoore_tablet@1x.webp 1x, ./images/tablet/main/team/2x/tmoore_tablet@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp">
+              <source srcset="./images/tablet/main/team/1x/tmoore_tablet@1x.jpg 1x, ./images/tablet/main/team/2x/tmoore_tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/smartphone/main/team/1x/tmoore_smartphone@1x.webp 1x, ./images/smartphone/main/team/2x/tmoore_smartphone@2x.webp 2x" media="(min-width: 480px)"
+                type="image/webp">
+              <source srcset="./images/smartphone/main/team/1x/tmoore_smartphone@1x.jpg 1x, ./images/smartphone/main/team/2x/tmoore_smartphone@2x.jpg 2x" media="(min-width: 480px)">
+              <img src="./images/smartphone/main/team/2x/cwalker_smartphone@2x.jpg" alt="Tyler Moore">
+            </picture>
+            <div class="team-list__content">
+            <h3 class="team-list__title">Tyler Moore</h3>
+              <p class="team-list__text">UI Designer</p>
+              <ul class="socialmedia-list  team__socialmedia-list ">
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialmedia-list__item">
+                  <a class="socialmedia-list__link" href="">
+                    <svg class="socialmedia-list__icon" width="20" height="20">
+                      <use href="./images/icons/socialmedia.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!--clients-->
+    <section class="clients section">
+      <div class="clients-container container">
+        <h2 class="section-title">Our Clients</h2>
+        <ul class="clients-list gallery">
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                 <svg class="clients__icon" Width="44.27" height="49.23px">
+                    <use href="./images/icons/clients.svg#client-1"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                  <svg class="clients__icon" width="40" height="52">
+                    <use href="./images/icons/clients.svg#client-2"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                  <svg class="clients__icon" width="79.66" height="42.02">
+                    <use href="./images/icons/clients.svg#client-3"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                  <svg class="clients__icon" width="59" height="47">
+                    <use href="./images/icons/clients.svg#client-4"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                  <svg class="clients__icon" width="88.48" height="45.44">
+                    <use href="./images/icons/clients.svg#client-5"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients__link" href="">
+                  <svg class="clients__icon" width="41" height="42.6">
+                    <use href="./images/icons/clients.svg#client-6"></use>
+                  </svg>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+      </main>
+  
+<!--footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="contacts-info">
+      <a class="logo" href="index.html" lang="en">Web<span class="logo-studio-white">Studio</span></a>
+      <ul class="contacts-list"  id="contacts">
+        <li>
+          <address>695 Park Ave, NY 10065, USA</address>
+        </li>
+        <li>
+          <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contact-link" href="tel:+12127724150">+1 212-772-4150</a>
+        </li>
+      </ul>
+      </div>
+      <div class="contacts-socialmedia">
+        <p class="footer-title">FIND US ON</p>
+        <ul class="socialmedia-list">
+        <li class="socialmedia-list__item">
+            <a class="socialmedia-list__link socialmedia-list__link--dark-bg" href="">
+              <svg class="socialmedia-list__icon" width="20" height="20">
+                <use href="./images/icons/socialmedia.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialmedia-list__item">
+            <a class="socialmedia-list__link socialmedia-list__link--dark-bg" href="">
+              <svg class="socialmedia-list__icon" width="20" height="20">
+                <use href="./images/icons/socialmedia.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialmedia-list__item">
+            <a class="socialmedia-list__link socialmedia-list__link--dark-bg" href="">
+              <svg class="socialmedia-list__icon" width="20" height="20">
+                <use href="./images/icons/socialmedia.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socialmedia-list__item">
+            <a class="socialmedia-list__link socialmedia-list__link--dark-bg" href="">
+              <svg class="socialmedia-list__icon" width="20" height="20">
+                <use href="./images/icons/socialmedia.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="followUs">
+        <form action="#" class="followUs-form">
+          <p class="footer-title">Subscribe to the newsletter</p>
+          <input type="email" class="followUs-form__input" name="user-mail" placeholder="E-mail">
+          <button type="submit" class="action-button">
+            Subscribe
+              <svg class="followUs-form__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#send-btn"></use>
+              </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+<!--modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+
+        <button class="modal-close-btn" data-modal-close>
+          <svg class="close-icon" width="30" height="30">
+            <use href="./images/icons/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+
+        <form class="submit">
+
+          <p class="submit__title">Leave your information and we'll call you back</p>
+
+          <div class="submit">
+            <label class="submit__lbl " for="username"> Name </label>
+            <div class="submit__input-wrapper">
+              <input class="submit__input submit--decoration" type="text" name="username" id="username" />
+              <svg class="submit__icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#person-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit">
+            <label class="submit__lbl" for="tel"> Telephone </label>
+            <div class="submit__input-wrapper">
+              <input class="submit__input submit--decoration" type="tel" name="tel" id="tel" />
+              <svg class="submit__icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#phone-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit">
+            <label class="submit__lbl" for="email"> E-mail </label>
+            <div class="submit__input-wrapper">
+              <input class="submit__input submit--decoration" type="email" name="email" id="email" />
+              <svg class="submit__icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#email-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit">
+            <label class="submit__lbl" for="comment"> Comments </label>
+            <textarea class="submit__textarea submit--decoration" name="comment" id="comment" placeholder="Enter Text"></textarea>
+          </div>
+          <div class="subscription">
+          <label class="subscription__label" for="agreement">
+            <input class="subscription-input hidden-element" type="checkbox" name="agreement" id="agreement" value="approved" />
+            <svg class="subscription__icon" width="16" height="15">
+              <use href="./images/icons/icons.svg#check"></use>
+            </svg>
+            <span>I agree with the letter and accept the</span>
+          </label>
+            <a class="subscription__link" href="">Terms and Conditions</a>
+          </div>
+
+          <button class="modal-submit-btn action-button" name="modal-submit-btn" type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+    <!--mobile-menu-->
+    
+      <!--mobile-menu-content-->
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+
+        <div class="mobile-menu__frame">
+        <ul class="mobile-menu-navigation">
+          <li class="mobile-menu-navigation__item">
+            <a href="./index.html" class="link mobile-menu-navigation__link current">Studio</a>
+          </li>
+          <li class="mobile-menu-navigation__item">
+            <a href="./portfolio.html" class="link mobile-menu-navigation__link">Portofolio</a>
+          </li>
+          <li class="mobile-menu-navigation__item">
+            <a href="" class="link mobile-menu-navigation__link">Contacts</a>
+          </li>
+        </ul>
+      
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts__item">
+            <a class="link mobile-menu-contacts__link mobile-menu-contacts__link--decoration" href="tel:+12127724150">
+              +1 212-772-4150
+            </a>
+          </li>
+          <li class="mobile-menu-contacts__item">
+            <a class="link mobile-menu-contacts__link" href="mailto:info@example.com">
+              info@example.com</a>
+          </li>
+        </ul>
+      
+        <ul class="mobile-menu-socialmedia">
+          <li class="mobile-menu-socialmedia__item"><a class="mobile-menu-socialmedia__link"
+              href="https://www.instagram.com/">Instagram</a></li>
+          <li class="mobile-menu-socialmedia__item"><a class="mobile-menu-socialmedia__link"
+              href="https://twitter.com/">Twitter</a></li>
+          <li class="mobile-menu-socialmedia__item"><a class="mobile-menu-socialmedia__link"
+              href="https://www.facebook.com/">Facebook</a></li>
+          <li class="mobile-menu-socialmedia__item"><a class="mobile-menu-socialmedia__link"
+              href="https://www.linkedin.com/">Linkedin</a></li>
+        </ul>
+      </div>
+     </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>

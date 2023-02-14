@@ -1,0 +1,129 @@
+header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  font-style: normal;
+
+  border-bottom: 1px solid var(--header-border-color);
+
+  & .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  & .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color var(--main-animation);
+  }
+
+  & .current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+
+  .current,
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacts-list {
+  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & > li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+
+    & > li:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__email {
+      padding-top: 21px;
+    }
+
+    &__phone {
+      padding-bottom: 21px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-text-wan-color);
+    transition: color var(--main-animation);
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__icon {
+    margin: 0 10px 0 0;
+    fill: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}
