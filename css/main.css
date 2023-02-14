@@ -661,7 +661,7 @@ li {
   left: 0px;
   top: 0px;
   justify-content: center;
-  width: 100vw;
+  /* width: 100vw;*not correct to remove bottom scrollbar use width:100%*/
   min-width: 240px;
   height: 100vh;
   padding: 48px 0;
@@ -670,6 +670,7 @@ li {
   visibility: hidden;
   pointer-events: all;
   overflow: auto;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
